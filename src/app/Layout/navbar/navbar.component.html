@@ -1,0 +1,63 @@
+<header>
+  <app-upper-bar></app-upper-bar>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container py-3">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto my-3 my-lg-0">
+          <li class="nav-item">
+            <a
+              routerLink="/"
+              class="nav-link"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              (click)="goToSection('app-who-are-we')"
+              class="nav-link"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              Chi Siamo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              routerLink="/product"
+              class="nav-link"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              Prodotti
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              routerLink="/contact"
+              class="nav-link"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              Contatti
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

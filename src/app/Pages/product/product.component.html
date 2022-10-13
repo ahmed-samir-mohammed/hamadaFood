@@ -1,0 +1,62 @@
+<div class="container pt-5 mt-5">
+  <!-- <div class="row">
+    <div class="col-3">
+      <h3>Category</h3>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-12 mb-3 border-bottom pb-3">
+      <form
+        [formGroup]="searchForm"
+        class="d-flex"
+        (ngSubmit)="submitForm(searchForm)"
+      >
+        <div class="row w-100">
+          <div class="col-md-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>All</option>
+              <ng-container *ngFor="let item of categoryList">
+                <option value="{{ item.name }}">
+                  {{ item.name }}
+                </option>
+              </ng-container>
+            </select>
+          </div>
+          <div class="col-md-8">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              placeholder="Search"
+              formControlName="title"
+              (change)="checkValue($event)"
+            />
+          </div>
+          <div class="col-md-1">
+            <button type="submit" class="btn btn-light w-100">
+              <img
+                src="../../../assets/img/search.svg"
+                class="upper-bar-Search-img"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-12" *ngIf="productList?.length == 0">
+      <h2>No Result</h2>
+    </div>
+    <div *ngFor="let item of productList" class="col-md-6 col-lg-4">
+      <app-cart-item
+        [item]="item"
+        sale="30%"
+        id="{{ item.id }}"
+        title="{{ item.title }}"
+        price="{{ item.price }}"
+        category="{{ item.category }}"
+        img="{{ item.image }}"
+      ></app-cart-item>
+    </div>
+  </div>
+</div>

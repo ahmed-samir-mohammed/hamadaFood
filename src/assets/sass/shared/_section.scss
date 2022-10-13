@@ -1,0 +1,14 @@
+%img_back {
+  position: absolute;
+  width: 20vw;
+}
+.start-img {
+  @extend %img_back;
+  bottom: 2rem;
+  left: 0;
+}
+.end-img {
+  @extend %img_back;
+  top: 2rem;
+  right: 0;
+}

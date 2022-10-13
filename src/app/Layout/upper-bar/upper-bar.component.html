@@ -1,0 +1,81 @@
+<div class="upper-bar p-0 p-lg-2 bg-white">
+  <div class="container p-0 px-lg-3">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-4 d-none d-lg-flex">
+        <h5 class="mb-0">
+          <a class="navbar-brand d-flex" routerLink="/">
+            <img
+              src="../../../assets/img/logo.png"
+              class="mobile-header-logo w-100"
+              alt=""
+            />
+          </a>
+        </h5>
+      </div>
+      <div class="col-lg-4">
+        <form class="upper-search w-100">
+          <input type="text" class="w-100" placeholder="Search ..." />
+          <button type="submit" class="input-img">
+            <img
+              src="../../../assets/img/search.svg"
+              class="upper-bar-Search-img"
+              alt=""
+            />
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+        <button
+          class="border-0 bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <img
+            src="../../../assets/img/cart.svg"
+            class="upper-bar-img"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have
+      chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+      >
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

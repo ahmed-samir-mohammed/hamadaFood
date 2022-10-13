@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./assets/sass/navbar";
+@import "./assets/sass/shared/section";
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+}

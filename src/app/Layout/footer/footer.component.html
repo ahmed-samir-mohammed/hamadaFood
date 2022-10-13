@@ -1,0 +1,43 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <a routerLink="/">
+          <img src="{{ Logo }}" alt="Logo" class="mobile-header-logo" />
+        </a>
+        <p>
+          Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at
+          placerat tincidunt. Nam sem lacus, ornare non ante sed, ultricies
+          fringilla massa.
+        </p>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h3>COMPANY</h3>
+        <div class="row">
+          <div class="col-6">
+            <ul class="d-flex flex-column">
+              <li *ngFor="let item of COMPANY_LIST | slice: 0:4">
+                <a routerLink="{{ item.link }}"> {{ item.name }} </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="d-flex flex-column">
+              <li *ngFor="let item of COMPANY_LIST | slice: 4">
+                <a routerLink="{{ item.link }}"> {{ item.name }} </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h3>Contact</h3>
+        <ul class="d-flex flex-column">
+          <li *ngFor="let item of CONTACT">
+            <a routerLink="{{ item.link }}"> {{ item.item }} </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

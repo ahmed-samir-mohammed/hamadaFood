@@ -1,0 +1,31 @@
+<div class="certificates">
+  <div class="start-img">
+    <img src="{{ StartImg }}" alt="StartImg" class="w-100" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <h2>CERTIFICAZIONI</h2>
+        <p class="text-center">
+          I nostri prodotti biologici sono certificati secondo il regolamento
+          disciplinare Bio, nel rispetto dei regolamenti dell'Unione Europea
+          (Reg.CE 834/07 e Reg. CE 889/08), Codice operatore IT BIO 006 G3222.
+        </p>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-4" *ngFor="let item of certificatesList">
+        <div class="img">
+          <img
+            src="{{ item.img }}"
+            alt="{{ item.alt }}"
+            class="certificates-img w-100"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end-img">
+    <img src="{{ EndImg }}" alt="EndImg" class="w-100" />
+  </div>
+</div>

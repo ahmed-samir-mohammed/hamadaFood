@@ -1,0 +1,39 @@
+<div
+  class="card__item"
+  [style.backgroundImage]="'url(https://api.lavitasrl.it/storage/' + img + ')'"
+>
+  <div class="a">
+    <div class="card__item--sale">{{ sale || "0" }}</div>
+    <div class="card__item--data">
+      <div class="card__item--data--top">
+        <div class="card__item--data--start">
+          <span class="card__item--category">{{ category || "Category" }}</span>
+          <h5 class="card__item--title">{{ title }}</h5>
+        </div>
+        <div class="card__item--data--end"></div>
+      </div>
+      <div class="card__item--data--bottom">
+        <span class="card__item--price">$ {{ price }}</span>
+        <div class="d-flex">
+          <a
+            class="btn btn-outline-success me-2"
+            routerLink="/product/{{ id }}"
+          >
+            <img
+              src="../../../../../assets/img/arrow-right.svg"
+              alt="ShoppingCartImg"
+              class="card__item--btn-img"
+            />
+          </a>
+          <button class="card__item--btn" (click)="addToCard($event, item)">
+            <img
+              src="../../../../../assets/img/plus.svg"
+              alt="ShoppingCartImg"
+              class="card__item--btn-img"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

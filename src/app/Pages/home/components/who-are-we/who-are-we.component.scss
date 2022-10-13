@@ -1,0 +1,14 @@
+@import "../../../../../../node_modules/font-size-sass/src/mixin/mixin";
+$min_width: 320px;
+$max_width: 1200px;
+
+.who-are-we {
+  padding-block: 5rem;
+  position: relative;
+  &-points {
+    &-img {
+      margin-inline-end: 1rem;
+      width: 1.5rem;
+    }
+  }
+}

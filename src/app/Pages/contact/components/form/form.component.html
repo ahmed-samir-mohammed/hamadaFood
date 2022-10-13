@@ -1,0 +1,60 @@
+<form
+  [formGroup]="contactFrom"
+  (submit)="sendContact(contactFrom)"
+  class="contact-form d-flex align-items-center flex-column justify-content-center"
+>
+  <div class="mb-3 w-100">
+    <label for="name" class="form-label">Nome</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      placeholder="Nome"
+      formControlName="name"
+      required
+    />
+  </div>
+  <div class="mb-3 w-100">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      placeholder="email"
+      required
+      formControlName="email"
+    />
+  </div>
+  <div class="mb-3 w-100">
+    <label for="matter" class="form-label">Soggetto</label>
+    <input
+      type="text"
+      class="form-control"
+      id="matter"
+      placeholder="Soggetto"
+      formControlName="matter"
+      required
+    />
+  </div>
+  <div class="mb-3 w-100">
+    <label for="message" class="form-label">Messaggio</label>
+    <textarea
+      class="form-control"
+      id="message"
+      rows="3"
+      placeholder="Messaggio"
+      formControlName="message"
+      required
+    ></textarea>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary w-100"
+    [disabled]="!contactFrom.valid"
+  >
+    <ng-container *ngIf="!showSpinner"> Sottoscrivi </ng-container>
+    <div *ngIf="showSpinner" class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </button>
+</form>

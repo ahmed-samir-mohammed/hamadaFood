@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API: 'http://api.lavitasrl.it/api',
+  MAP_KEY: 'AIzaSyADDP856G478liVa0cQ5EX3B5JFcVxUlG0',
 };
 
 /*

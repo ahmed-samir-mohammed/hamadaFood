@@ -1,0 +1,16 @@
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px 0px #0000000f;
+}
+
+.btn-primary {
+  border-color: #80b600 !important;
+  background: #80b600 !important;
+  &:hover,
+  &:focus {
+    border-color: #70a000 !important;
+    background: #70a000 !important;
+  }
+}

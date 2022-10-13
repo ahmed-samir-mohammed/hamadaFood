@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_55933" data-name="Group 55933" transform="translate(-1675 -34)">
+    <g id="Group_744" data-name="Group 744" transform="translate(1425 -96)">
+      <g id="Group_416" data-name="Group 416" transform="translate(-185 85)">
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(435 45)" fill="#80b600"/>
+      </g>
+      <g id="shopping-cart_1_" data-name="shopping-cart (1)" transform="matrix(0.998, -0.07, 0.07, 0.998, 242.75, 1.438)">
+        <path id="Path_16" data-name="Path 16" d="M3.482,4.276,2.918.016H0V1.178H1.9L3.8,15.506a2.159,2.159,0,0,0,1.791,1.841,1.82,1.82,0,1,0,3.382.028h4.8a1.82,1.82,0,1,0,1.7-1.162H5.928a.992.992,0,0,1-.98-.859L4.8,14.263H18.476L19.838,8.02V4.276H3.482ZM7.929,18.032a.658.658,0,1,1-.658-.658A.658.658,0,0,1,7.929,18.032Zm8.188,0a.658.658,0,1,1-.658-.658A.658.658,0,0,1,16.117,18.032ZM18.675,7.895,17.54,13.1H4.649L3.636,5.439h15.04Z" transform="translate(6.518 139.725)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

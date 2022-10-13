@@ -1,0 +1,17 @@
+@import "../../../../node_modules/font-size-sass/src/mixin/mixin";
+$min_width: 320px;
+$max_width: 1200px;
+
+p {
+  $min_font: 16px;
+  $max_font: 22px;
+  @include font-size($min_width, $max_width, $min_font, $max_font);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: #80b600;
+  }
+}
