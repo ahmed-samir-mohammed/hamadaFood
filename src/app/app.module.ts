@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { ProductComponent } from './Pages/product/product.component';
 import { CartItemComponent } from './Pages/product/components/cart-item/cart-item.component';
+import { CartComponent } from './Layout/upper-bar/components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CartItemComponent } from './Pages/product/components/cart-item/cart-ite
     FormComponent,
     ProductComponent,
     CartItemComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
