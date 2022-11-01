@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit {
     { item: 'Via Alessandro Votla,13' },
     { item: '00012 Guidonia Montecelio, Rome, Italy' },
     { item: 'P.IVA 14611161002' },
-    { item: 'Tel. +39 0774 184 3880' },
+    // { item: 'Tel. +39 0774 184 3880' },
     { item: 'info@lavitasrls.it' },
   ];
   constructor() {}

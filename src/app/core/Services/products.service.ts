@@ -25,4 +25,9 @@ export class ProductsService {
   getAllCategory(): Observable<Category> {
     return this.http.get<Category>(`${env.API}/categories`);
   }
+
+  getProductDetail(id: number): Observable<Product> {
+    // params = new HttpParams().set('id', id);
+    return this.http.get<Product>(`${env.API}/product/${id}`);
+  }
 }

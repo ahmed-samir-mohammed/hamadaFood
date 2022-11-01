@@ -1,0 +1,45 @@
+.cartItem {
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  &__img {
+    width: 10rem;
+    padding: 0.5rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__data {
+    width: 100%;
+    padding: 1rem;
+    &--info {
+      width: 100%;
+    }
+  }
+
+  .counter {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: #80b600;
+    font-size: 1rem;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    margin-block: 0.5rem;
+    outline: none;
+  }
+
+  button {
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 1rem;
+    }
+  }
+}

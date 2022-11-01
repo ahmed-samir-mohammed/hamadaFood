@@ -26,7 +26,7 @@
       </div>
       <div class="col-lg-4 d-none d-lg-flex justify-content-end">
         <button
-          class="border-0 bg-transparent"
+          class="border-0 bg-transparent position-relative"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasExample"
@@ -37,6 +37,9 @@
             class="upper-bar-img"
             alt=""
           />
+          <span class="counter position-absolute" *ngIf="counter">
+            {{ counter }}
+          </span>
         </button>
       </div>
     </div>
@@ -44,7 +47,7 @@
 </div>
 
 <div
-  class="offcanvas offcanvas-start"
+  class="offcanvas offcanvas-end"
   tabindex="-1"
   id="offcanvasExample"
   aria-labelledby="offcanvasExampleLabel"
@@ -57,7 +60,22 @@
       aria-label="Close"
     ></button>
   </div>
-  <div class="offcanvas-body">
-    <app-cart></app-cart>
+  <div class="offcanvas-body p-0">
+    <h2 *ngIf="counter == 0">No Result</h2>
+    <div class="d-flex flex-column justify-content-between h-100">
+      <app-cart *ngIf="counter > 0" (total)="getTotal($event)"></app-cart>
+      <div class="d-flex flex-column p-3">
+        <h3
+          class="d-flex py-3 border-bottom border-top my-3 justify-content-between"
+          *ngIf="total"
+        >
+          <span>Total:</span>
+          <span>$ {{ total }}</span>
+        </h3>
+        <button class="w-100 btn" *ngIf="counter > 0" routerLink="/checkout">
+          Next
+        </button>
+      </div>
+    </div>
   </div>
 </div>

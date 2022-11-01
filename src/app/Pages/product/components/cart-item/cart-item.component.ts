@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/core/model/product';
+import { CartService } from 'src/app/core/Services/cart.service';
 
 @Component({
   selector: 'app-cart-item',
@@ -16,13 +17,15 @@ export class CartItemComponent implements OnInit {
   @Input('item') item!: Product;
   EyeImg: string = '../../../../../assets/img/eye.png';
   ShoppingCartImg: string = '../../../../../assets/img/shopping-cart.png';
-
-  constructor() {}
+  cartItems: any[] = [];
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {}
 
   addToCard(e: any, item: any) {
-    console.log('event', e);
-    console.log('item:', item);
+    this.cartService.sendCartItem(item);
+    // this.cartItems.push(item);
+    // console.log(this.cartItems);
+    // localStorage.setItem('cart', JSON.stringify(this.cartItems));
   }
 }
