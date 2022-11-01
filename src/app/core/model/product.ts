@@ -26,3 +26,16 @@ export interface Category {
   created_at?: string;
   updated_at?: string;
 }
+
+export interface ProductDetails {
+  id: string;
+  title: string;
+  price: string;
+  description: string;
+  image: string;
+  weight: string;
+  subcategory_id: string;
+  created_at: string;
+  updated_at: string;
+  subcategory: Subcategory;
+}

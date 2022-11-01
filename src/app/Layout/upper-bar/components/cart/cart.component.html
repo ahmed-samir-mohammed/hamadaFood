@@ -1,0 +1,27 @@
+<ng-container *ngFor="let item of cartList">
+  <div
+    class="cartItem d-flex align-items-center justify-content-between mb-3"
+    [attr.data-id]="item.id"
+  >
+    <div class="cartItem__img">
+      <img src="https://api.lavitasrl.it/storage/{{ item.image }}" alt="" />
+    </div>
+    <div
+      class="cartItem__data d-flex align-items-center justify-content-between"
+    >
+      <div class="cartItem__data--info">
+        <h5>{{ item.title }}</h5>
+        <p class="mb-0">${{ item.price }}</p>
+      </div>
+      <div class="cartItem__data--counter d-flex flex-column">
+        <button class="plus" (click)="increment(item)">
+          <img src="../../../../../assets/img/plus.svg" alt="" />
+        </button>
+        <div class="counter" contenteditable>{{ item.count }}</div>
+        <button class="minus" (click)="decrement(item)">
+          <img src="../../../../../assets/img/minus.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-container>

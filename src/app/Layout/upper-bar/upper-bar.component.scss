@@ -56,3 +56,31 @@
     }
   }
 }
+
+.counter {
+  background-color: #e73636;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -5px;
+  right: -6px;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 0;
+  font-size: 0.8rem;
+}
+
+.offcanvas-body {
+  button {
+    background-color: #80b600;
+    color: #fff;
+  }
+}
+
+app-cart {
+  max-height: 85%;
+  overflow-y: auto;
+  padding: 1rem;
+}
