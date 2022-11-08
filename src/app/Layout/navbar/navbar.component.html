@@ -26,14 +26,22 @@
             </a>
           </li>
           <li class="nav-item">
-            <a
+            <!-- <a
               (click)="goToSection('app-who-are-we')"
               class="nav-link"
               routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }"
             >
               Chi Siamo
-            </a>
+            </a> -->
+            <a
+            routerLink="/who"
+            class="nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Chi Siamo
+          </a>
           </li>
           <li class="nav-item">
             <a
