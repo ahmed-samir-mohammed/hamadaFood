@@ -103,11 +103,33 @@
   }
 }
 
-@media (min-width: 575px){
+@media only screen and (max-width: 575px) {
   .checkout{
     .formSection {
       .visa{
-        height: 5.2vh;
+        height: 4vh;
+      }
+    }
+    .checkout .pay-icon {
+      height: 5vh;
+      width: 7vw;
+    }
+  }
+}
+@media only screen and (max-width: 767px) and (min-width:576px)  {
+  .checkout{
+    .formSection {
+      .visa{
+        height: 5.7vh;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) and (min-width:768px)   {
+  .checkout{
+    .formSection {
+      .visa{
+        height: 5.8vh;
       }
     }
     .checkout .pay-icon {
