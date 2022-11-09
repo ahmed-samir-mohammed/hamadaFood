@@ -16,9 +16,9 @@
       text-transform: capitalize;
     }
     .visa{
-      height: 8vh;
-      display: flex;
-      justify-content: end;
+      bottom: 5px;
+      padding-inline-start: 12px;
+      position: relative;
     }
     .order-details{
       color: #a5a3a3;
@@ -82,13 +82,18 @@
     color: #000;
   }
   .pay-icon{
-    height: 4.7vh;
-    width: 4vw;
-    img{
-      width: 100%;
-      height: 100%;
-      border-radius: 6px;
+    i{
+      font-size: 30px;
+
     }
+    // height: 4.7vh;
+    // width: 4vw;
+
+    // img{
+    //   width: 100%;
+    //   height: 100%;
+    //   border-radius: 6px;
+    // }
   }
   .actions{
     text-decoration: none;
@@ -102,48 +107,66 @@
     border: 2px solid #80b600;
   }
 }
-
-@media  (max-width: 575px) {
+.w-91{
+  width: 91%;
+}
+.w-9{
+  width: 9%;
+}
+.c-bitcoin{
+  color: #ff8404;
+}
+@media  (max-width: 450px){
+  .w-91 {
+    width: 80%;
+  }
+}
+@media (min-width:455px) and (max-width: 575px) {
   .checkout{
-    .formSection {
-      .visa{
-        height: 4vh;
-      }
-    }
     .checkout .pay-icon {
       height: 5vh;
       width: 7vw;
     }
   }
+  .w-91 {
+    width: 85%;
+  }
 }
-@media  (min-width:576px) and (max-width: 767px)    {
-  .checkout{
-    .formSection {
-      .visa{
-        height: 7.5vh;
-      }
-    }
+@media (min-width:576px)  and (max-width: 767px){
+  .w-91 {
+    width: 87%;
   }
 }
 @media (min-width:768px)  and (max-width: 991px)  {
   .checkout{
-    .formSection {
-      .visa{
-        height: 7.8vh;
-      }
-    }
     .checkout .pay-icon {
       height: 5vh;
       width: 7vw;
     }
   }
+  .w-91 {
+    width: 85%;
+  }
 }
-@media (min-width:992) and  (max-width: 1999) {
-  .checkout{
+@media (min-width:992px) and  (max-width: 1999px) {
+  .w-91 {
+    width: 90%;
+  }
+}
+@media (min-width:1200px) and  (max-width: 1399px) {
+  .w-91 {
+    width: 92%;
+  }
+}
+@media (min-width:1400px){
+  .checkout {
     .formSection {
-      .visa{
-        height: 7vh;
+      .visa {
+        padding-inline-start: 20px;
       }
     }
+  }
+  .w-91 {
+    width: 100%;
   }
 }
