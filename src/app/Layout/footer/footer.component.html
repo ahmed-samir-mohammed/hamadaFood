@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-8 col-lg-4 col-12">
         <a routerLink="/">
           <img src="{{ Logo }}" alt="Logo" class="mobile-header-logo" />
         </a>
@@ -16,29 +16,29 @@
           >
         </p>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 col-12">
         <h3>COMPANY</h3>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 ">
             <ul class="d-flex flex-column">
-              <li *ngFor="let item of COMPANY_LIST | slice: 0:4">
+              <li *ngFor="let item of COMPANY_LIST | slice: 0:4" class="item">
                 <a routerLink="{{ item.link }}"> {{ item.name }} </a>
               </li>
             </ul>
           </div>
-          <div class="col-6">
+          <div class="col-6 ">
             <ul class="d-flex flex-column">
-              <li *ngFor="let item of COMPANY_LIST | slice: 4">
+              <li *ngFor="let item of COMPANY_LIST | slice: 4" class="item">
                 <a routerLink="{{ item.link }}"> {{ item.name }} </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 col-12">
         <h3>Contact</h3>
         <ul class="d-flex flex-column">
-          <li *ngFor="let item of CONTACT">
+          <li *ngFor="let item of CONTACT" class="item">
             <a routerLink="{{ item.link }}"> {{ item.item }} </a>
           </li>
         </ul>

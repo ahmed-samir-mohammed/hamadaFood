@@ -1,16 +1,20 @@
 <div class="product-detail py-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-12">
         <div class="img">
-          <img
-            class="w-100"
+          <!-- <img
+            class="w-100 mb-3"
             src="https://api.lavitasrl.it/storage/{{ productDetail?.image }}"
             alt="{{ productDetail?.title }}"
-          />
+          /> -->
+          <img
+          class="w-100 mb-3"
+          src= "https://i.insider.com/5797674c4321f1d01a8bad2e?width=850&format=jpeg"
+        />
         </div>
       </div>
-      <div class="col-md-6 px-5 d-flex align-items-center">
+      <div class="col-md-8 col-sm-12 px-5 d-flex align-items-center">
         <div class="detail">
           <h1>{{ productDetail?.title }}</h1>
           <h2 class="price">$ {{ productDetail?.price }}</h2>

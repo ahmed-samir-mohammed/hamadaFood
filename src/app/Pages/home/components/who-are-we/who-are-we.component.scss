@@ -11,4 +11,13 @@ $max_width: 1200px;
       width: 1.5rem;
     }
   }
+  .img-content{
+    width: 95%;
+  }
+}
+
+@media (max-width:991px){
+  p{
+    font-size: 13px;
+  }
 }
