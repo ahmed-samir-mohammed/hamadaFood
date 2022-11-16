@@ -12,7 +12,7 @@
         (ngSubmit)="submitForm(searchForm)"
       >
         <div class="row w-100">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-12  col-12 mb-3">
             <select class="form-select" aria-label="Default select example">
               <option selected>All</option>
               <ng-container *ngFor="let item of categoryList">
@@ -22,7 +22,7 @@
               </ng-container>
             </select>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-sm-10  col-10">
             <input
               type="text"
               class="form-control"
@@ -32,7 +32,7 @@
               (change)="checkValue($event)"
             />
           </div>
-          <div class="col-md-1">
+          <div class="col-md-1 col-sm-2  col-2">
             <button type="submit" class="btn btn-light w-100">
               <img
                 src="../../../assets/img/search.svg"

@@ -19,41 +19,48 @@
     outline: 0;
     color: #fff;
     box-shadow: 0px 3px 6px #00000029;
-    @media (max-width: 991px) {
-      background: #80b60021;
-      border-radius: 0.5rem;
-      padding: 0.7rem 1rem;
-      padding-inline-end: 3.5rem;
-      border: 1px solid #80b600;
-      color: #000;
-    }
-    &:focus {
-      outline: 0;
-    }
+    width: 87%;
+    // @media (max-width: 991px) {
+    //   background: #80b60021;
+    //   border-radius: 0.5rem;
+    //   padding: 0.7rem 1rem;
+    //   padding-inline-end: 3.5rem;
+    //   border: 1px solid #80b600;
+    //   color: #000;
+    // }
+    // &:focus {
+    //   outline: 0;
+    // }
     &::placeholder {
-      color: rgba(255, 255, 255, 0.413);
+      color: #fff
     }
   }
   .input-img {
-    position: absolute;
-    top: 5px;
+    position: relative;
+    top: 1px;
     border: 0;
     border-radius: 0 5rem 5rem;
-    right: 5px;
+    right: 40px;
     background: #fff;
     align-items: center;
     height: 36px;
     width: 36px;
-    display: flex;
-    justify-content: center;
-    @media (max-width: 991px) {
-      border-radius: 0.25rem;
-      height: 38px;
-      width: 38px;
-    }
+    // display: flex;
+    // justify-content: center;
+    // @media (max-width: 991px) {
+    //   border-radius: 0.25rem;
+    //   height: 38px;
+    //   width: 38px;
+    // }
     .upper-bar-Search-img {
       width: 1rem;
     }
+    i{
+      color: #80b600;
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 16px 6px;
   }
 }
 
@@ -83,4 +90,67 @@ app-cart {
   max-height: 85%;
   overflow-y: auto;
   padding: 1rem;
+}
+@media(max-width:575px){
+  .upper-bar{
+    .upper-search {
+      input[name=search]{
+        background: #f3f1f1;
+        color: #000;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        width: 60px;
+        font-size: 12px;
+        padding: 0.7rem 0.3rem;
+
+      }
+      input[name=search]:focus{
+        width:150px;
+        transition: all 0.5s ease-in-out;
+      }
+      .input-img {
+        position: relative;
+        background: #80b600;
+        right: 30px;
+        border: 0;
+        border-radius: 15px;
+        height: 43px;
+        top: 0px;
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}
+@media (min-width:576px) and (max-width:991px){
+  .upper-bar{
+    .upper-search {
+      input[name=search]{
+        background: #f3f1f1;
+        color: #000;
+        border-radius: 10px;
+        width: 160px;
+        transition: all 0.5s ease-in-out;
+      }
+      input[name=search]:focus{
+        width:280px;
+        transition: all 0.5s ease-in-out;
+      }
+      .input-img {
+        position: relative;
+        background: #80b600;
+        right: 30px;
+        border: 0;
+        border-radius: 15px;
+        height: 43px;
+        top: 0px;
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+
 }

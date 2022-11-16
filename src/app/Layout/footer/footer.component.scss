@@ -34,3 +34,29 @@ footer {
     height: auto;
   }
 }
+
+@media(max-width: 575px){
+  footer {
+    padding-block: 1rem;
+    margin-top: 3rem;
+    .col-12{
+      margin: 1.3rem auto;
+      h3 {
+        margin-bottom: 1rem;
+      }
+      .item{
+        padding-bottom:8px
+      }
+    }
+  }
+}
+@media(min-width:576px) {
+  footer {
+    padding-block: 1rem;
+    margin-top: 3rem;
+    .col-md-8{
+      margin: 1.3rem 0px;
+     
+    }
+  }
+}
